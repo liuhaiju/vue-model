@@ -4,6 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import VConsole from 'vconsole'
+
+// if (process.env.NODE_ENV === 'production') {
+  new VConsole()
+// }
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

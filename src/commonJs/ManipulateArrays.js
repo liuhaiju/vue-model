@@ -24,6 +24,6 @@ export default {
         if(Number(c)>=10&&Number(c)<100) {
             c = `0${c}`
         }
-      return c
+      return c.toString()
     }
 }

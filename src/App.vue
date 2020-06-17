@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  mounted() {
+    // ios禁止页面缩放
+    document.addEventListener('gesturestart', function(event) {
+      event.preventDefault();
+    });
+  }
 }
 </script>
 
